@@ -1,0 +1,98 @@
+<!Doctype html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="project-one.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      
+    />
+	 
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="project-one.js"></script>
+	<script src="sortA.js"></script>
+
+</head>
+<body>
+
+
+
+
+ 
+
+<section id="div-one">
+<div id="div-2">
+<div id="div-3"><strong>TO DO</strong></div>
+<div></div>
+
+<div id="div-4" class="img-toggled" onclick="myFunction(); faV()"></div>
+<i onclick="faV(); darkmode(); darklists(); condark()"  id="favIcon"></i>
+</div>
+
+<div id="myDIV" class="header">
+<div id="mydivv">
+  <span id="addbutton" onclick="newElement(); getCheckboxvalue(); addg()" class="addBtn"></span>
+  <input type="text" id="myInput" placeholder="WHAT'S UP ..... !">
+  </div>
+</div>
+
+<div id="divul">
+<ul id="myUL" class="divclass" onclick='newElement1(); slist(); getCheckboxvalue()'>             
+  
+
+
+</ul>
+ <div id="Container" class="condiv">
+
+  <div id="Container3">
+    <button class="gettext btn"><span class="gettext1"></span>items left</button>
+	<div id="Container1">
+  <button class="btn" onclick="showcompleted(); showuncomp()"><a href="#">All</a></button>
+  <button class="btn" onclick="hidecompleted(); showuncomp()">Active</button>
+  <button class="btn active" onclick="showcompleted(); hideuncomp()">Completed</button>
+   </div>
+    <button id="btn2" class="btn btn2" onclick="rmove()">Clear Completed</button>
+  </div>
+
+</div>
+</div>
+
+<div id="Container4">
+<div id="Container2">
+  
+  <button class="btn" onclick="showcompleted(); showuncomp()"><a href="#">All</a></button>
+  <button class="btn" onclick="hidecompleted(); showuncomp()">Active</button>
+  <button class="btn active" onclick="showcompleted(); hideuncomp()">Completed</button>
+  
+</div>
+</div>
+
+
+<p><strong>Drag and drop to reorder list<strong></p>
+
+</section>
+<footer>
+
+</footer>
+
+
+<!-- linking keyboard "ENTER" to input button -->
+
+<script>
+var input = document.getElementById("myInput");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("addbutton").click();
+  }
+});
+</script>
+
+</body>
+</html>
